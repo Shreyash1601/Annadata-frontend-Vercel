@@ -1,6 +1,7 @@
+
 .form-body{
     margin: auto;
-    width:60vw;
+    width:90vw;
     border-radius:20px;
     box-shadow: 10px 10px #aca1a1;
     font-size: larger;
@@ -15,8 +16,9 @@
     font-family:'Nunito', sans-serif;
 }
 .crop{
-    font-size:100px;
-    text-align:center
+    font-size:40px;
+    text-align:center;
+    margin-top:30px
 }
 .btn{
     align-self: center;

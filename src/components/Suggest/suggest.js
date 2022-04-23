@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react'
 import React,{useState} from 'react'
-import './home.css'
+import './suggest.css'
 const wiki = require('wikipedia');
-const axios = require("axios");
 
 const Home = () => {
   const [data,setData]=useState({
@@ -52,7 +51,7 @@ const Home = () => {
 
     (async () => {
       try {
-        const summary = await wiki.summary(crop.toString());
+        const summary = await wiki.summary(crop.toString().toLowerCase());
         setInfo(summary.extract)
         //Response of type @wikiSummary - contains the intro and the main image
       } catch (error) {
@@ -67,7 +66,7 @@ const Home = () => {
         <br/>
         <br/>
         <br/>
-        <h1>Welcome to Annadata</h1> 
+        <h1 style={{textAlign:"center",fontWeight:"bolder"}}>Enter Soil health and Weather statistics</h1> 
         <form class="form-body">
   <div class="form-group">
     <label for="exampleInputEmail1">Enter Nitrogen content</label>
