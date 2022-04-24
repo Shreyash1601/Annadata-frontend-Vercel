@@ -32,7 +32,7 @@ const Home = () => {
       body:data2
     })
     const result=await res.json()
-    if(res.status!=200||!result){
+    if(res.status!==200||!result){
       window.alert("Invalid request!!Check your connection or check the details provided")
     }
     else{

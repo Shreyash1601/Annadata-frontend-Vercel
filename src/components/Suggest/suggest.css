@@ -3,7 +3,7 @@
     margin: auto;
     width:90vw;
     border-radius:20px;
-    box-shadow: 10px 10px #aca1a1;
+    box-shadow: 10px 10px 5px #aca1a1;
     font-size: larger;
     font-weight: bold;
     color:rgb(53, 50, 205);
@@ -29,11 +29,11 @@
     border:3px solid black;
     color:white;
     font-weight: bold;
-    background-color: rgb(241, 9, 106);
+    background-color: rgb(226, 188, 16);
 }
 .input{
     height: 50px;
     margin:auto;
     border-radius:25px;
-    box-shadow: 1px 2px yellowgreen;
+    box-shadow: 1px 2px 0.5px yellowgreen;
 }

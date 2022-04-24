@@ -20,7 +20,7 @@ const intro = () => {
     <p>
         We have included other relevant features such as access to the <b>Wikipedia summary </b>of the crop predicted, live access to government owned 24x7 <b>DD Kisan channel</b> and a reference to the current <b>market price</b> of a commodity
     </p>
-    <p>We would subsequently be adding more features ton our application. Until then....</p>
+    <p>We would subsequently be adding more features to our application. Until then....</p>
 
     <h1 style={{fontStyle:'italic',textAlign:'center',fontWeight:'bolder'}}>Jay Jawaan !! Jay Kisaan !! Jay Vigyan</h1>
     <p style={{textAlign:"right",fontStyle:'italic',fontSize:'20px'}}>Atal Bihari Vajpayee</p>
