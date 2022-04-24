@@ -7,6 +7,7 @@ import {Route,Routes} from 'react-router-dom'
 const App=()=> {
   return (
     <>
+    <div class="App">
     <Navbar/>
     <Routes>
     <Route exact path="/" element={<Intro/>}/>
@@ -14,7 +15,7 @@ const App=()=> {
       
       <Route exact path="/DD" element={<DD/>}/>
     </Routes>
-
+</div>
     </>
   );
 }
