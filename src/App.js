@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from "./components/Navbar/Navbar"
 import Intro from "./components/Intro/intro"
+import Kisan from "./components/Kisan helpline/Kisan"
 import Suggest from "./components/Suggest/suggest"
 import DD from "./components/DD/DD"
 import {Route,Routes} from 'react-router-dom'
@@ -12,6 +13,7 @@ const App=()=> {
     <Routes>
     <Route exact path="/" element={<Intro/>}/>
       <Route exact path="/Suggest" element={<Suggest/>}/>
+      <Route exact path="/Kisan" element={<Kisan/>}/>
       
       <Route exact path="/DD" element={<DD/>}/>
     </Routes>
