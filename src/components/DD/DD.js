@@ -9,7 +9,7 @@ const DD = () => {
         <br/>
 <h1 className="screen">Watch DD Kisan Live</h1>
 <div >
-<ReactPlayer className="screen" width="100vw" height="100vh" controls url="https://youtu.be/YSB78Lqn-Ls" muted={false} playing={true}/>
+<ReactPlayer className="screen" width="100vw" height="100vh" controls url="https://youtu.be/QeL_9juHHkY" muted={false} playing={true}/>
 </div>
         </>
     )
