@@ -5,26 +5,26 @@ const wiki = require('wikipedia');
 
 const Home = () => {
   const [data,setData]=useState({
-    N:0,
-    P:0,
-    K:0,
-    temp:0,
-    humi:0,
-    ph:0,
-    rainfall:0
+    N:"",
+    P:"",
+    K:"",
+    temp:"",
+    humi:"",
+    ph:"",
+    rainfall:""
   })
   const [crop,setCrop]=useState()
   const [info,setInfo]=useState(null)
   const PostData=async (e)=>{
     e.preventDefault()
     const data2=new FormData()
-    data2.append('N',data.N)
-    data2.append('P',data.P)
-    data2.append('K',data.K)
-    data2.append('temp',data.temp)
-    data2.append('humi',data.humi)
-    data2.append('ph',data.ph)
-    data2.append('rainfall',data.rainfall)
+    data2.append('N',Math.round(data.N))
+    data2.append('P',Math.round(data.P))
+    data2.append('K',Math.round(data.K))
+    data2.append('temp',Math.round(data.temp))
+    data2.append('humi',Math.round(data.humi))
+    data2.append('ph',Math.round(data.ph))
+    data2.append('rainfall',Math.round(data.rainfall))
 
 
     const res=await fetch("https://annadata-ml-api.herokuapp.com/suggest",{
