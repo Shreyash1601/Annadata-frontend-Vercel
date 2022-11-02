@@ -1,9 +1,11 @@
 import { render } from '@testing-library/react'
 import React,{useState} from 'react'
 import './suggest.css'
+import loading from './../../images/loading.gif'
 const wiki = require('wikipedia');
 
 const Home = () => {
+  const [disp,setDisp]=useState(false)
   const [data,setData]=useState({
     N:"",
     P:"",
@@ -17,6 +19,7 @@ const Home = () => {
   const [info,setInfo]=useState(null)
   const PostData=async (e)=>{
     e.preventDefault()
+    setDisp(true)
     const data2=new FormData()
     data2.append('N',Math.round(data.N))
     data2.append('P',Math.round(data.P))
@@ -33,9 +36,11 @@ const Home = () => {
     })
     const result=await res.json()
     if(res.status!==200||!result){
+      setDisp(false)
       window.alert("Invalid request!!Check your connection or check the details provided")
     }
     else{
+      setDisp(false)
       console.log(result)
       setCrop(result.suggestion.toUpperCase())
     }
@@ -97,8 +102,15 @@ const Home = () => {
     <input name="rainfall" type="number" value={data.rainfall} onChange={handleInputs}class="form-control input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter annual rainfall in cm"/>
   </div>
   <button class="btn btn-primary" onClick={PostData}>Suggest</button>
+  <div style={{display:disp?"block":"none",alignSelf:"center",color:"black"}}>
+  <img src={loading} height="70px" width="120px" />
+  <h3 >Loading...</h3> 
+  </div>
+  
 </form>
 {/* Information on Crop */}
+
+
 <h1 class="crop">{crop}</h1>
 <p class="Info">{info}</p>
 
