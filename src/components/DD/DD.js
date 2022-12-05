@@ -9,7 +9,7 @@ const DD = () => {
         <br/>
 <h1 className="screen">Watch DD Kisan Live</h1>
 <div class="screen">
-<iframe width="100%" height="500px" playing={true} muted={false} src="https://www.youtube.com/embed/8I4OEn94uKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+<iframe width="100%" height="500px" playing={true} muted={false} src="https://youtu.be/BZGfa4CB2UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 </div>
         </>
     )
