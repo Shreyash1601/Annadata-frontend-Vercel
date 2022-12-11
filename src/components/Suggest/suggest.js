@@ -30,7 +30,7 @@ const Home = () => {
     data2.append('rainfall',Math.round(data.rainfall))
 
 
-    const res=await fetch("https://annadata-ml-api.herokuapp.com/suggest",{
+    const res=await fetch("https://web-production-f876.up.railway.app/suggest",{
       method:"POST",
       body:data2
     })
