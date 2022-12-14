@@ -15,7 +15,7 @@ const intro = () => {
     <p>Our application is a little initiative to suggest them the best crops to be sown fetching them better yields and income. We have used a <b>kaggle</b> provided dataset and used <b>Random Forest</b> algorithm to make predictions</p>
 
     <p>
-    The predictions are made using a <b>Flask server</b> deployed on <b>Heroku</b> and the front-end is prepared using <b>ReactJS</b>
+    The predictions are made using a <b>Flask server</b> deployed on <b>Render</b> and the front-end is prepared using <b>ReactJS</b>
     </p> 
     <p>
         We have included other relevant features such as access to the <b>Wikipedia summary </b>of the crop predicted, live access to government owned 24x7 <b>DD Kisan channel</b> and a reference to the current <b>market price</b> of a commodity

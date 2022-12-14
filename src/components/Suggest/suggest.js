@@ -30,7 +30,7 @@ const Home = () => {
     data2.append('rainfall',Math.round(data.rainfall))
 
 
-    const res=await fetch("https://web-production-f876.up.railway.app/suggest",{
+    const res=await fetch("https://annadata.onrender.com/suggest",{
       method:"POST",
       body:data2
     })
