@@ -1,0 +1,33 @@
+.container{
+    margin-top:10vh;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.container > div{
+    margin-top:5vh;
+    display:flex;
+    flex-direction: row;
+    width:100vw;
+    height:20vh;
+    justify-content: space-around;
+}
+.container> div> button{
+    color:rgba(4, 172, 4, 0.719);
+    font-size:23px;
+    width:30vw;
+    height:8vh;
+    border:2px solid rgb(15, 209, 15);
+    border-radius:5px;
+    background-color: transparent;
+}
+.container> div> button:active{
+background-color: rgb(15,209,15);
+color:white
+}
+.Result>h1{
+    color:rgb(17, 136, 17);
+    text-align: center;
+}

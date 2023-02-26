@@ -20,6 +20,9 @@ const Navbar = () => {
       <li class="nav-item active">
         <Link className="nav-link" to="/Kisan">Kisan Helpline</Link>
       </li>
+      <li class="nav-item active">
+        <Link className="nav-link" to="/prices">Market Price of Crops</Link>
+      </li>
      
       <li class="nav-item active">
         <NavLink className="nav-link" to="/DD">DD Kisaan</NavLink>
